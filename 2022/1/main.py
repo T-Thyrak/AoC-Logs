@@ -1,0 +1,1 @@
+with open("input.txt", "r") as f: print(sum(sorted(list(map(lambda g: sum(list(map(lambda x: int(x), g.split("\n")))), f.read().split("\n\n"))), reverse=True)[:3]))
